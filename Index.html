@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BAIC Formosa - Login</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root{
+  --bg:#0b0c0e;
+  --surface:#13151a;
+  --accent:#c8102e;
+  --accent2:#e8253f;
+  --text:#e8eaf0;
+  --muted:#6b7080;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background: radial-gradient(circle at top, #111 0%, #0b0c0e 60%);
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* CONTENEDOR */
+.login-container{
+  width:360px;
+  padding:40px 30px;
+  background:rgba(19,21,26,0.85);
+  border:1px solid #c8102e30;
+  border-radius:14px;
+  backdrop-filter: blur(10px);
+  box-shadow:0 20px 60px #00000080;
+  text-align:center;
+}
+
+/* LOGO */
+.logo{
+  margin-bottom:30px;
+}
+
+.logo img{
+  width:120px;
+  margin-bottom:10px;
+  filter: drop-shadow(0 0 8px #c8102e50);
+}
+
+.logo-text{
+  font-family:'Rajdhani',sans-serif;
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+.logo-sub{
+  font-size:11px;
+  color:var(--muted);
+  letter-spacing:2px;
+}
+
+/* INPUTS */
+.input-group{
+  margin-bottom:16px;
+  text-align:left;
+}
+
+.input-group label{
+  font-size:11px;
+  color:var(--muted);
+  display:block;
+  margin-bottom:4px;
+}
+
+.input-group input{
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #ffffff15;
+  background:#1a1d24;
+  color:var(--text);
+  outline:none;
+  transition:.2s;
+}
+
+.input-group input:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 1px var(--accent);
+}
+
+/* BOTÓN */
+.btn{
+  width:100%;
+  margin-top:10px;
+  padding:11px;
+  border:none;
+  border-radius:8px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;
+  font-weight:500;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 25px #c8102e40;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:18px;
+  font-size:11px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+  <div class="logo">
+    <!-- REEMPLAZÁ por tu logo transparente -->
+    <img src="logo.png" alt="BAIC">
+    <div class="logo-text">BAIC Formosa</div>
+    <div class="logo-sub">INVENTARIO</div>
+  </div>
+
+  <div class="input-group">
+    <label>Usuario</label>
+    <input type="text" placeholder="Ingresar usuario">
+  </div>
+
+  <div class="input-group">
+    <label>Contraseña</label>
+    <input type="password" placeholder="••••••••">
+  </div>
+
+  <button class="btn">Ingresar</button>
+
+  <div class="footer">
+    Sistema interno · BAIC Formosa
+  </div>
+
+</div>
+
+</body>
+</html>
